@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A3T-f5-3ot">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="wSm-eh-Cbc">
+            <objects>
+                <viewController id="HST-bg-c4d" customClass="SecondViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NsF-kq-NRA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDp-z3-v3C">
+                                <rect key="frame" x="81" y="318" width="276" height="151"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTZ-UM-U2b">
+                                <rect key="frame" x="25" y="318" width="365" height="254"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="76i-lL-Tox"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TDp-z3-v3C" firstAttribute="top" secondItem="76i-lL-Tox" secondAttribute="top" constant="230" id="3IN-xp-hWL"/>
+                            <constraint firstItem="hTZ-UM-U2b" firstAttribute="trailing" secondItem="NsF-kq-NRA" secondAttribute="trailingMargin" constant="-4" id="5lU-ws-5NA"/>
+                            <constraint firstItem="76i-lL-Tox" firstAttribute="bottom" secondItem="TDp-z3-v3C" secondAttribute="bottom" constant="393" id="Erw-B5-jqN"/>
+                            <constraint firstItem="76i-lL-Tox" firstAttribute="trailing" secondItem="TDp-z3-v3C" secondAttribute="trailing" constant="57" id="Fo7-6c-fVI"/>
+                            <constraint firstItem="hTZ-UM-U2b" firstAttribute="leading" secondItem="76i-lL-Tox" secondAttribute="leading" constant="25" id="HKO-CG-5dH"/>
+                            <constraint firstItem="hTZ-UM-U2b" firstAttribute="top" secondItem="76i-lL-Tox" secondAttribute="top" constant="230" id="NUq-Ha-0bY"/>
+                            <constraint firstItem="76i-lL-Tox" firstAttribute="bottom" secondItem="hTZ-UM-U2b" secondAttribute="bottom" constant="290" id="gU5-dL-M9K"/>
+                            <constraint firstItem="TDp-z3-v3C" firstAttribute="leading" secondItem="76i-lL-Tox" secondAttribute="leading" constant="81" id="vSA-OC-jOm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w3t-2L-Cdh"/>
+                    <connections>
+                        <outlet property="secondLabel" destination="hTZ-UM-U2b" id="dGs-Ji-Ymh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PN-9Q-dFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442.0289855072465" y="-48.214285714285715"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JDl-Gt-XOf">
+            <objects>
+                <viewController id="VeL-sh-JjR" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GgF-Tp-UbI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="doroga" translatesAutoresizingMaskIntoConstraints="NO" id="NYq-w0-Bbg">
+                                <rect key="frame" x="0.0" y="19" width="414" height="843"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start fast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5la-y2-Uf4">
+                                <rect key="frame" x="65" y="134" width="284" height="61.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="51"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="45E-X3-MIo">
+                                <rect key="frame" x="61.5" y="342.5" width="291" height="248"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="po1-sa-QJh">
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mi2-3S-l8u">
+                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="66"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="16 hr." buttonSize="large">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="sixteenHrs:" destination="VeL-sh-JjR" eventType="touchUpInside" id="J8m-N5-lga"/>
+                                                    <action selector="sss:" destination="g1y-LX-g2S" eventType="touchUpInside" id="8Of-sP-FCy"/>
+                                                    <segue destination="HST-bg-c4d" kind="show" id="PA4-h6-jwA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcv-16-Tec">
+                                                <rect key="frame" x="170.5" y="0.0" width="120.5" height="66"/>
+                                                <color key="backgroundColor" systemColor="tintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="23 hr." buttonSize="large">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="twentyThreeHr:" destination="g1y-LX-g2S" eventType="touchUpInside" id="SxL-ym-WzH"/>
+                                                    <action selector="twentyThreeHrs:" destination="VeL-sh-JjR" eventType="touchUpInside" id="aOp-Dt-0C7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ixT-gc-bD9">
+                                        <rect key="frame" x="0.0" y="91" width="291" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lU-Jp-Zkc">
+                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="66"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="36 hr." buttonSize="large">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="thirtySixHrs:" destination="VeL-sh-JjR" eventType="touchUpInside" id="4Wt-bY-GoE"/>
+                                                    <action selector="thirtySixHrs:" destination="g1y-LX-g2S" eventType="touchUpInside" id="4dJ-c7-rnO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgT-kM-8Un">
+                                                <rect key="frame" x="170.5" y="0.0" width="120.5" height="66"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="47 hr." buttonSize="large">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="fourtySevenHrs:" destination="VeL-sh-JjR" eventType="touchUpInside" id="ZCm-3l-U0q"/>
+                                                    <action selector="fourtySevenHrs:" destination="g1y-LX-g2S" eventType="touchUpInside" id="nPB-L0-NIZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-c3-ErX">
+                                        <rect key="frame" x="0.0" y="182" width="291" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po7-sx-NcX">
+                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="66"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="71 hr." buttonSize="large">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="SeventyOneHrs:" destination="g1y-LX-g2S" eventType="touchUpInside" id="4RD-Hq-Kbf"/>
+                                                    <action selector="seventyOneHrs:" destination="VeL-sh-JjR" eventType="touchUpInside" id="itS-vS-3aI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCx-RY-C5O">
+                                                <rect key="frame" x="170.5" y="0.0" width="120.5" height="66"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Custom" buttonSize="large">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="CustomHrs:" destination="VeL-sh-JjR" eventType="touchUpInside" id="JLW-11-xGq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fJY-7g-DHx"/>
+                        <constraints>
+                            <constraint firstItem="po1-sa-QJh" firstAttribute="top" secondItem="5la-y2-Uf4" secondAttribute="bottom" constant="147" id="0OR-sI-4kP"/>
+                            <constraint firstItem="ixT-gc-bD9" firstAttribute="centerX" secondItem="fJY-7g-DHx" secondAttribute="centerX" id="9gY-PB-7fn"/>
+                            <constraint firstItem="fJY-7g-DHx" firstAttribute="trailing" secondItem="5la-y2-Uf4" secondAttribute="trailing" constant="65" id="Dan-ao-kSL"/>
+                            <constraint firstItem="5la-y2-Uf4" firstAttribute="top" secondItem="fJY-7g-DHx" secondAttribute="top" constant="46" id="bCt-vh-GDd"/>
+                            <constraint firstItem="NYq-w0-Bbg" firstAttribute="leading" secondItem="fJY-7g-DHx" secondAttribute="leading" id="e98-pc-KlW"/>
+                            <constraint firstItem="NYq-w0-Bbg" firstAttribute="top" secondItem="45E-X3-MIo" secondAttribute="bottom" constant="-571.5" id="fyL-Yo-mYU"/>
+                            <constraint firstItem="5la-y2-Uf4" firstAttribute="leading" secondItem="fJY-7g-DHx" secondAttribute="leading" constant="65" id="ja7-FS-TQd"/>
+                            <constraint firstItem="fJY-7g-DHx" firstAttribute="bottom" secondItem="NYq-w0-Bbg" secondAttribute="bottom" id="jjv-Ib-CsE"/>
+                            <constraint firstItem="fJY-7g-DHx" firstAttribute="trailing" secondItem="NYq-w0-Bbg" secondAttribute="trailing" id="uJG-eF-8YV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KB9-NW-Dl8"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="mi2-3S-l8u" collectionClass="NSMutableArray" id="SKq-H9-8g4"/>
+                        <outletCollection property="buttons" destination="tcv-16-Tec" collectionClass="NSMutableArray" id="m3s-C6-EPZ"/>
+                        <outletCollection property="buttons" destination="6lU-Jp-Zkc" collectionClass="NSMutableArray" id="n8D-3I-phS"/>
+                        <outletCollection property="buttons" destination="KgT-kM-8Un" collectionClass="NSMutableArray" id="0jd-zv-R1z"/>
+                        <outletCollection property="buttons" destination="po7-sx-NcX" collectionClass="NSMutableArray" id="iZp-Ad-J51"/>
+                        <outletCollection property="buttons" destination="vCx-RY-C5O" collectionClass="NSMutableArray" id="vvi-kd-3Ux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kfx-7s-DoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="g1y-LX-g2S" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1631.8840579710147" y="-42.1875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w77-qI-zp3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A3T-f5-3ot" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I6Q-A5-vM8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VeL-sh-JjR" kind="relationship" relationship="rootViewController" id="NOl-OP-fVk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWx-Pe-h9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721.73913043478262" y="-42.1875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doroga" width="1390" height="1390"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
